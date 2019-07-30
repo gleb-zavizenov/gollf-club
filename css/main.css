@@ -238,6 +238,197 @@ h2, h3{
 	background-color: #215445;
 }
 
+/* Service area */
+#serviceCon{
+	margin-bottom:10px;
+}
+
+.services{
+	margin-bottom: 20px;
+	padding-top:1px;
+}
+
+.services h2{
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	margin-top:15px;
+}
+
+.services h3{
+	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.services p{
+	color:#333;
+	font-size: 0.875em;
+	line-height: 22px;
+	text-align: justify;
+}
+
+.icon{
+	float:left;
+	max-width:70px;
+	margin: 0 20px 0 0;
+}
+
+/* Extras Area */
+#extraCon{
+	margin-bottom: 60px;
+}
+
+.extras-img{
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+.extras h2{
+	font-size:1.25em;
+	line-height: 0;
+	margin-bottom:30px;
+}
+
+.extras p{
+	color: #333;
+	font-size: 0.875em;
+	line-height: 22px;
+}
+
+#footerCon{
+	background-color: #8fa771;
+	height:70px;
+}
+
+#backBut{
+	text-decoration: none;
+	color:#fff;
+	line-height:70px;
+	font-size: 0.75em;
+}
+
+#backBut:hover{
+	color:#333;
+}
+
+#footerNav{
+	display: none;
+}
+
+/* Media query for 400px wide */
+@media screen and (min-width:25.063em){
+	#infoFrost h2{
+		font-size:1.5em;
+	}
+	#infoFrost h3{
+		font-size: 1.0075em;
+		letter-spacing: 0.25px;
+	}
+	#infoFrost p{
+		font-size:0.875em;
+	}
+}
+
+/* Media query for 480px wide */
+@media screen and (min-width:30em){
+	#infoFrost{
+		background: url(../img/golf_club2.png) right no-repeat rgba(255,255,255, 0.7);
+	}
+}
+
+/* 620px */
+@media screen and (min-width: 38.75em){
+	#infoFrost h2{
+		font-size:1.25em;
+	}
+	#infoFrost h3{
+		font-size: 1.25em;
+		letter-spacing: 0.25px;
+	}
+	#infoFrost p{
+		font-size:0.875em;
+	}
+}
+
+/* 640 */
+@media screen and (min-width:40em){
+	#serviceCon{
+		display: flex;
+	}
+
+	.services{
+		margin-right:20px;
+	}
+
+	.services:last-child{
+		margin-right:0px;
+	}
+
+	.icon{
+		max-width:50px;
+		margin-right:8px;
+	}
+
+	.services p{
+		color:#333;
+		font-size: 0.875em;
+		line-height: 22px;
+		text-align:left;
+	}
+
+	.services h2{
+		font-size: 0.925em;
+		margin-top:10px;
+		margin-bottom: 5px;
+		line-height: 14px;
+	}
+
+	.services h3{
+		font-size: 0.875em;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	/* Reflow the bottom navigation */
+	#footerNav{
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	#footerCon ul{
+		list-style: none;
+		margin:0;
+		padding:0;
+		font-size:0.875em;
+	}
+
+	#footerCon ul li{
+		display: inline;
+		margin-right: 20px;
+	}
+
+	#footerCon ul li a{
+		color:#fff;
+		line-height: 78px;
+	}
+
+	#footerCon ul li a:hover{
+		color:#333;
+	}
+}
+
+@media screen and(min-width: 50em){
+	#infoFrost {
+		background: url(../img/golf_club.png) right no-repeat rgba(255,255,255,0.8);
+	}
+}
+
+@media screen and (min-width: 61.875em){
+	#infoFrost p{
+		width:50%;
+	}
+}
+
 /* Handle the nav at desktop -> reflow to fix a new size */
 @media screen and (min-width: 64em){
 	#mainHeader{
@@ -315,6 +506,46 @@ h2, h3{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+	}
+
+	/* Reflow services section for desktop */
+	#serviceCon{
+		display: flex;
+	}
+
+	.services{
+		margin-right:20px;
+	}
+
+	.services:last-child{
+		margin-right:0px;
+	}
+
+	.icon{
+		max-width:15%;
+	}
+
+	.services p{
+		font-size: 0.9375em;
+		width:auto;
+	}
+
+	.services h2{
+		font-size: 1.25em;
+	}
+
+	.services h3{
+		font-size: 0.875em;
+	}
+
+	/* Reflow Extras Content */
+	#extraCon{
+		display: flex;
+	}
+
+	.extras:last-child{
+		margin-left: 40px;
+
 	}
 
 }
